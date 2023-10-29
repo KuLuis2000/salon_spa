@@ -115,16 +115,13 @@ header{
 }
 
 .botones{
-  width: 375px;
-  margin: auto;
-  margin-top: 30px;
+  margin: 0%;
   display: flex;
   flex-direction: row;
-  justify-content:space-between;
-  align-items:center;
-  font-family: var(--tipografia_delgada);
-  display: flex;
-  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  flex-wrap: wrap;
 }
 
 .boton_rosa{
