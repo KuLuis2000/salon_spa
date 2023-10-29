@@ -20,6 +20,10 @@
   border-radius: 0;
   display: block;
 }
+
+.ancho{
+  max-width: 95%;
+}
   .aromatizante{
     width: 100%;
   }
@@ -55,6 +59,14 @@
     justify-content: space-between;
     align-items: center;
     width: 95%;
+  }
+  .servicios section{
+    width: 100%;
+  }
+
+  .contenedor_velas p{
+    width: 90%;
+    margin: auto;
   }
   .services{
     margin-bottom: 15px;
@@ -142,11 +154,7 @@
     font-family: calibri;
     text-align: left;
   }
-  .botones{
-    margin-top: 10px;
-    align-items:stretch;
-    margin-bottom: 30px;
-  }
+
   .figure_section{
     width: 95%;
     margin: auto;
@@ -173,16 +181,13 @@
     align-items: stretch;
   }
   .boton_rosa{
-    padding: 10px 20px;
+    padding: 15px 25px;
   }
   .boton_transparente{
-    padding: 10px 20px;
-  }
-  .botones{
-    gap: 10px;
+    padding: 15px 25px;
   }
   .fondopiedras{
-    height: 350px;
+    height: 380px;
   }
   .flecha{
     display: none;
@@ -197,11 +202,12 @@
     display: flex;
     flex-direction: column;
     margin-top: 10px;
-    max-width: 95%;
+    max-width: 350px;
   }
   .velas{
     width: 370px;
     margin-left: -30px;
+    max-width: 350px;
   }
   .tres{
     order: -1;
@@ -235,5 +241,9 @@
   border-bottom: 2px var(--rosado) dotted;
   border-radius: 0;
   display: block;
+}
+
+.servicios{
+  width: 90%;
 }
 }

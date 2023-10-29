@@ -123,6 +123,8 @@ header{
   justify-content:space-between;
   align-items:center;
   font-family: var(--tipografia_delgada);
+  display: flex;
+  flex-direction: column;
 }
 
 .boton_rosa{
