@@ -9,6 +9,7 @@
   <link rel="stylesheet" href="estilo.css">
   <link rel="stylesheet" href="movil.css">
   <script src='https://kit.fontawesome.com/2ee0245f3d.js' crossorigin='anonymous'></script>
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
 </head>
 <body>
   <header class="arriba">
@@ -23,7 +24,8 @@
       </aside>
     </div>
     <nav class="ancho">
-      <ul class="contenedor_menu">
+      <i id="iconomenu" class="fa-solid fa-ellipsis-vertical"></i>
+    <ul id="menu" class="contenedormenu"> 
         <li><a href="#">Galeria</a></li>
         <li><a href="#">PRECIOS</a></li>
         <li><a href="#">CONTACTANOS</a></li>
@@ -33,75 +35,88 @@
   </header>
  <section class="fondopiedras">
   <h2>PROMOCIONES DE MARZO</h2>
+  <br>
   <h3>Se acerca la época de la playa y por eso preparamos estas dos <br> promociones ideales para ti</h3>
   <br>
   
   <aside class="botones">
-    <a class="boton_rosa" href="#">Solicitar Promoción</a>
-  <a class="boton_transparente" href="#">ver Vídeo</a>
+    <a class="boton_rosa" href="#">Solicitar Promoción <i class="flecha fa-regular fa-circle-right"></i></a>
+  <a class="boton_transparente" href="#">ver Vídeo <i class="video fa-solid fa-video"></i></a>
   </aside>
 </section>
-
-<div class="contenedor_velas">
+<br>
+<div class="contenedor_velas ancho">
   <section>
     <h2 class="uno">Los productos Science of Beauty</h2>
+    <br>
     <p class="dos">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Recusandae repellendus repellat culpa, provident magnam minus beatae corrupti nemo quasi voluptas obcaecati adipisci ullam vitae, dicta impedit. Earum quaerat dicta magni. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor sequi doloremque ducimus. Vel reprehenderit veniam ex tempore quam perspiciatis vitae, iure mollitia velit recusandae deleniti harum laboriosam et voluptatibus fugiat!</p>
   </section>
-  <figure class="tres">
+  <figure class="img_velas tres">
     <img class="velas" src="Imagenes/fotovelas.jpg" alt="">
   </figure>
 </div>
-
-<div class="contenedores_varios">
+<br>
+<footer class="contenedores_varios">
   <h2>Buscamos talento para integrarlos a nuestro equipo</h2>
 
-  <div class="figure_section">
+  <div class="ancho figure_section">
     <figure>
+      <br> 
       <img class="aromatizante" src="Imagenes/fotoaromatizante.jpg" alt="">
     </figure>
-    <section>
+    <section class="info_puestos">
+      <br>
       <h3>Puesto de trabajo para recepcionista</h3>
       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam iure minima libero, adipisci quaerat dolores facere illo architecto cumque fugiat fuga reprehenderit eaque quos distinctio molestias aut ipsa dignissimos similique?</p>
-
+      <br>
       <h3>Puesto de trabajo para masajista</h3>
       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis ratione perferendis expedita, provident distinctio doloremque sunt dignissimos, eum suscipit totam voluptatibus atque nulla aliquid eveniet facilis officiis! Ducimus, voluptatum facilis?</p>
-
+      <br>
       <h3>Puesto de trabajo para nutriólogo</h3>
       <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ex libero quibusdam excepturi possimus saepe delectus doloremque. Consequatur, id adipisci vel a odio alias quod pariatur nesciunt. Iure magnam dolor ratione.</p>
     </section>
   </div>
-  <br>
-  <div class="servicios">
+  <br><br>
+  <div class="servicios ancho">
     <section class="services">
       <img src="Imagenes/fotocircular1.jpg" alt="">
       <h2>MASAJES CORPORALES</h2>
       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae maxime explicabo dolore vitae nobis labore doloribus, quidem veritatis magnam officiis ex vero totam beatae qui ullam nesciunt nihil minima natus?</p>
       <br>
-      <a href="#">ver mas</a>
+      <a href="#">ver mas <i class="fa-solid fa-eye"></i></a>
     </section>
     <section class="services">
       <img src="Imagenes/fotocircular2.jpg" alt="">
       <h2>TRATAMIENTOS CON PIEDRAS</h2>
       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae maxime explicabo dolore vitae nobis labore doloribus, quidem veritatis magnam officiis ex vero totam beatae qui ullam nesciunt nihil minima natus?</p>
       <br>
-      <a href="#">ver mas</a>
+      <a href="#">ver mas <i class="fa-solid fa-eye"></i></a>
     </section>
     <section class="services">
       <img src="Imagenes/fotocircular3.jpg" alt="">
       <h2>MASCARILLA ANTIARRUGAS</h2>
       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae maxime explicabo dolore vitae nobis labore doloribus, quidem veritatis magnam officiis ex vero totam beatae qui ullam nesciunt nihil minima natus?</p>
       <br>
-      <a href="#">ver mas</a>
+      <a href="#">ver mas <i class="fa-solid fa-eye"></i></a>
     </section>
   </div>
-
+  <br>
   <div class="contenedorfinal">
+    <br>
     <picture>
       <img class="logoabajo" src="Imagenes/logo_abajo.jpg" alt="">
     </picture>
     <br>
     <a class="rosa" href="#">www.spasalon.com</a>
   </div>
-</div>
+</footer>
+
+<!-- Función para que funcione el menu del sandwich -->
+<script>
+  $("#iconomenu").click(function () {
+    $("#menu").slideToggle();
+  })
+</script>
+
 </body>
 </html>

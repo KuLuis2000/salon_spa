@@ -1,12 +1,22 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@1,100&family=Tilt+Neon&display=swap");
+
 :root{
   --rosado:#fe3281;
   --beige: #fff9f1;
   --blanco: #ffffff;
   --negro: #000000;
   --margen_izquierdo: 15px;
+  --tipografia_delgada: 'Raleway', sans-serif;
+  --Tipografia_gruesa: 'Tilt Neon', sans-serif;
+
+}
+
+*{
+  margin: 0%;
+  padding: 0%;
 }
 body{
-  font-family: helvetica;
+  font-family: var(--tipografia_delgada);
   font-size: 16px;
   line-height: 24px;
   color: #333;
@@ -28,6 +38,8 @@ header{
   flex-direction: row;
   justify-content:space-between;
   align-items:center;
+  margin: 0%;
+  padding: 0%;
 }
 .contenedor_cabecera picture{
   width: 200px;
@@ -54,7 +66,7 @@ header{
 .iconosredes a i{
   font-size:50px;
 }
-.contenedor_menu{
+.contenedormenu{
   list-style: none;
   margin: 0;
   padding:0;
@@ -62,13 +74,15 @@ header{
   flex-direction: row;
   justify-content:space-around;
   align-items: stretch;
+
 }
-.contenedor_menu{
+.contenedormenu{
   border: 2px var(--negro) solid;
+  font-family: var(--Tipografia_gruesa);
 }
-.contenedor_menu li{
+.contenedormenu li{
 }
-.contenedor_menu li a{
+.contenedormenu li a{
   display: inline-block;
   padding:10px 15px;
   text-decoration: none;
@@ -76,7 +90,7 @@ header{
   text-transform:uppercase;
   transition: all 0.5s ease;
 }
-.contenedor_menu li a:hover{
+.contenedormenu li a:hover{
   color:var(--rosado);
 }
 
@@ -91,27 +105,34 @@ header{
 
 .fondopiedras h2{
   font-size: 40px;
+  font-family: var(--Tipografia_gruesa);
 }
 
 .fondopiedras h3{
   font-size: 28px;
   line-height: 30px;
-  font-family: calibri;
+  font-family: var(--tipografia_delgada);
 }
 
 .botones{
-  width: 325px;
+  width: 375px;
   margin: auto;
   margin-top: 30px;
   display: flex;
   flex-direction: row;
   justify-content:space-between;
   align-items:center;
+  font-family: var(--tipografia_delgada);
 }
 
 .boton_rosa{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: nowrap;
   background-color: var(--rosado);
-  padding: 20px;
+  gap: 10px;
+  padding: 15px;
   border: 2px var(--rosado) solid;
   text-decoration: none;
   color: var(--blanco);
@@ -124,9 +145,18 @@ header{
   background-color: rgba(255, 255, 255, 0);
 }
 
+.flecha{
+  color: white;
+}
+
 .boton_transparente{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: nowrap;
+  gap: 10px;
   border: 2px var(--rosado) solid;
-  padding: 20px;
+  padding: 15px;
   text-decoration: none;
   color: var(--blanco);
 }
@@ -143,6 +173,8 @@ header{
   gap: 100px;
   margin: auto;
   display: flex;
+  justify-content: space-between;
+  align-items: center;
   flex-direction: row;
   margin-top: 10px;
 }
@@ -155,13 +187,39 @@ header{
   line-height: 35px;
 }
 
+.img_velas{
+  width: 1200px;
+}
+
+.velas{
+  width: 100%;
+}
+
 .contenedores_varios{
   background-color: var(--beige);
   border-bottom: 15px var(--rosado) solid;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px;
 }
 
 .contenedores_varios h2{
   text-align: center;
+  margin: auto;
+  padding: 10px;
+  font-family: var(--Tipografia_gruesa);
+}
+
+.aromatizante{
+  border-radius: 15px;
+  max-width: 500px;
+}
+
+.info_puestos{
+  max-width: 600px;
 }
 
 .figure_section{
@@ -171,6 +229,7 @@ header{
   flex-direction: row;
   justify-content: space-between;
   align-items: stretch;
+  gap: 40px;
 }
 
 .servicios{
@@ -187,6 +246,10 @@ header{
   border-radius: 15px;
   background-color: rgb(253, 236, 161);
   padding-bottom: 40px;
+}
+
+.servicios h2{
+  font-family: var(--Tipografia_gruesa);
 }
 
 section img{
@@ -223,3 +286,13 @@ section a:hover{
   color: var(--rosado);
   text-decoration: none;
 }
+
+#iconomenu{
+  border: 2px var(--rosado) solid;
+  padding: 10px;
+  border-radius: 5px;
+  color: white;
+  background-color: var(--rosado);
+  display: none;
+}
+
